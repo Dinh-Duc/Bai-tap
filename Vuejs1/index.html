@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div class="conttent">
+        <p v-html="linksex">link</p>
+        <h1 v-once>{{ conttent }} - {{ sayPost()}}</h1>
+        <a class="link" :href="link">Anh em</a><br>
+        <button v-on:click='sayDem'>Ấn đê</button>
+        <button v-on:click='sayTru'>Đừng ấn</button>
+
+        <p>Giá trị : {{dem  }}</p>
+        <p>Giá trị : {{dem >20 ? ' Bạn vượt quá' : 'Bạn chưa vượt' }}</p>
+
+        <p class= "bem"v-on:mouseover="tinhToado"> Tao độ của chuột {{x}}/{{y}}</p>
+        <div class="vui">
+            <input type="text" @keyup.enter='banphim'>
+
+        </div>
+</div>
+
+<div class="app">
+    <input type="checkbox">
+    <p>{{name}}</p>
+    <p>Gtri an: {{tanga }}</p>
+    <p>Gtri uong: {{tangb }}</p>
+    <button v-on:click = 'an++'>ấn đế</button>
+    <button v-on:click = 'uong++'>ấn đế</button>
+
+
+</div>
+
+
+<!-- <div class="color">
+    <div class="vuong" @click = "quanlido = !quanlido" :class="{do: quanlido}"></div>
+    <div class="vuong" @click = " quanlixanh = ! quanlixanh" :class="{xanh: quanlixanh}"></div>
+
+    <div class="vuong" ></div>
+
+    <div class="vuong"></div>
+  
+
+</div> -->
+
+
+<div class="app2">
+    <div class="vuong" @click= "quanlicam = !quanlicam" :class="{cam: quanlicam}"></div>
+   
+   
+   
+    <div class="vuong" @mouseover="quanlixanh = !quanlixanh" :class="{xanh: quanlixanh}"></div>
+    <input type="text" v-model="quanlixanh">
+
+   
+   
+    <div class="vuong"  :class="colors"></div>
+    <input type="text" v-model="colors">
+
+
+    <div class="vuong"  :class="color"></div>
+    <input type="text" v-model="color">
+
+</div>
+
+<div id="app1">
+    <h1 v-bind:class="{ 'text-red': isRed }">Chào mừng bạn đến với website toidicode.com</h1>
+    <button type="button" v-on:click="toggleClass">Toggle Class</button>
+</div>
+
+<div id="app3">
+    <div class="vuong"  :style="{backgroundColor: colorss}"></div>
+    <input type="text" v-model="colorss">
+    <div class="vuong"  :style="changeColor"></div>
+    <input type="text" v-model="height">
+</div>
+
+
+<!-- IF -ELSE -->
+
+<div id="an">
+    <p v-if="dongvat">Gau gau gau</p>
+    <p v-else>Meo meo meo</p>
+    <h1>{{title}}</h1>
+    <pi></pi>
+
+    <button @click="dongvat = !dongvat">Who are you</button>
+
+   <br>
+    <button @click="hien = !hien">Ấn</button>
+    <template v-if="hien">
+        <div>Anh ăn</div>
+        <div>Anh ăn</div>
+
+        <div>Anh ăn</div>
+
+
+        <div>Anh ăn</div>
+
+        <div>Anh ăn</div>
+    </template>
+
+    <ul>
+        <li v-for="menu in menus">{{menu}}</li>      
+          <!-- <li v-for="value in menu">{{value}}</li> -->
+
+
+        <!-- <p v-for="value in men">{{ value}} </p>
+        </li> -->
+    </ul>
+
+    <ul>
+        <!-- <li v-for="student in students">{{student.name}}<br>{{student.age}}</li> -->
+    </ul>
+    <ul>
+        <li v-for="student in students">
+            <a v-for="(value, key) in student">{{key}}: {{value}}<br></a>
+
+        </li>
+
+    </ul>
+
+    <ul>
+        <li v-for="(bin, i) in bins">{{bin}} Value: {{i}}</li>
+    </ul>
+    <button @click="bins.push('nets')">Add</button>
+
+</div>
+
+<div class="b">
+    <h1>Anh cứ</h1>
+    <button @click="chance"> ấn nhanh đê</button>
+    <pi></pi>
+</div>
+    <!-- JS -->
+    <script src="./app.js">
+
+    
+    
+    </script>
+</body>
+</html>

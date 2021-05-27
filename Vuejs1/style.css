@@ -1,0 +1,48 @@
+.link{
+    text-decoration: none;
+}
+
+.bem{
+    height: 150px;
+    background-color: aqua;
+}
+
+.vui{
+    border: 2px solid black;
+    width: 200px;
+}
+
+.app {
+    margin: 250px;
+    background-color: aqua;
+}
+
+.vuong{
+    width: 100px;
+    height: 100px;
+    background: gray;
+    display: inline-block;
+    margin: 10px;
+}
+
+.do{
+    background-color: red;
+}
+.xanh{
+    background-color: blue;
+}
+
+.vang{
+    background-color: yellow;
+}
+
+.cam{
+    background-color: orange;
+}
+.hong{
+    background-color: orchid;
+}
+.text-red{
+    color: red;
+}
+
