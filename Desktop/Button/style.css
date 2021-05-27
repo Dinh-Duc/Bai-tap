@@ -1,0 +1,35 @@
+body > div{
+    margin: auto;
+}
+
+.btn{
+
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin: 5px;
+    padding: 12px 38px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+.btn--success{
+    background-color: green;
+}
+
+.btn--warn{
+    background-color: orange;
+
+}
+
+.btn--danger{
+    background-color: red;
+
+}
